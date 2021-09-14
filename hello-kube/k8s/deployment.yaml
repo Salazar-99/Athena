@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello
+  template:
+    metadata:
+      labels:
+        app: hello
+    spec:
+      containers:
+        - name: demo
+          image: hello-kube:latest
+          ports:
+            - containerPort: 8888
+          env:
+            - name: GREETING
+              valueFrom:
+                configMapKeyRef:
+                  name: hello-config
+                  key: greeting
