@@ -7,10 +7,9 @@ Here I keep track of the various projects I'm working on for my cluster
 - Create a dashboard for CronJobs (starts, failures, coming up)
 
 ### Self Hosting
-- Configure port-forwarding from home router to master node which will serve as a load balancer
-- Register for CloudFlare to proxy requests to my cluster
-- Deploy personal website on my cluster
-  - Deployment
-  - Service
-  - Ingress
-- Migrate domain name and point it to Cloudflare proxy
+- Replace personal-website deployment image with my site
+- Configure Flux to track personal-website repo for CD
+
+## Remote Access to Cluster
+- Investigate using a WireGuard VPN to access home network remotely
+- Investigate using CloudFlare to allow kubectl securely from a remote network to home cluster
