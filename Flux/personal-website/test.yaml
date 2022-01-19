@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flux-test
+spec:
+  containers:
+  - name: flux-test
+    image: nginx:1.20
