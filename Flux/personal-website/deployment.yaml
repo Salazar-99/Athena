@@ -35,4 +35,4 @@ spec:
             cpu: "500m"
             memory: "256Mi"
       imagePullSecrets:
-      - name: aws-ecr
+      - name: ecr-credentials
