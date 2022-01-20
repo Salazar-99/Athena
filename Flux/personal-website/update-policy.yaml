@@ -14,7 +14,7 @@ spec:
   git:
     checkout:
       ref:
-        branch: master
+        branch: main
     commit:
       author:
         name: fluxbot
