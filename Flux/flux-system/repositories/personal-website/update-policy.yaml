@@ -17,8 +17,8 @@ spec:
         branch: main
     commit:
       author:
-        name: Gerardo Salazar
-        email: drifta10.gs@gmail.com
+        name: Salazar-99
+        email: salazar-99@users.noreply.github.com
       messageTemplate: |
         An automated update from FluxBot       
     push:
