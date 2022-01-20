@@ -1,0 +1,23 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImageUpdateAutomation
+spec:
+  sourceRef:
+    kind: GitRepository
+    name: athena
+  interval: 1m
+  update:
+    strategy: Setters
+    path: ./Flux/personal-website
+  git:
+    checkout:
+      ref:
+        branch: master
+    commit:
+      author:
+        name: fluxbot
+        email: fluxbot@example.com 
+      messageTemplate: |
+        An automated update from FluxBot
+        [ci skip]        
+    push:
+      branch: master

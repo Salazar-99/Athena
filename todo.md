@@ -7,8 +7,8 @@ Here I keep track of the various projects I'm working on for my cluster
 - Create a dashboard for CronJobs (starts, failures, coming up)
 
 ### Self Hosting
-- Replace personal-website deployment image with my site
-- Configure Flux to track personal-website repo for CD
+- Configure Flux to track personal-website repo for CI/CD
+  - TODO: Get help on this: Create ImageUpdateAutomation resource (to update deployment files in git with new image)
 
 ## Remote Access to Cluster
 - Investigate using a WireGuard VPN to access home network remotely
