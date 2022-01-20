@@ -6,7 +6,7 @@ metadata:
 spec:
   sourceRef:
     kind: GitRepository
-    name: athena
+    name: flux-system
   interval: 1m
   update:
     strategy: Setters
@@ -23,4 +23,4 @@ spec:
         An automated update from FluxBot
         [ci skip]        
     push:
-      branch: master
+      branch: main
