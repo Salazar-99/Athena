@@ -17,8 +17,8 @@ spec:
         branch: main
     commit:
       author:
-        name: fluxbot
-        email: fluxbot@example.com 
+        name: Gerardo Salazar
+        email: drifta10.gs@gmail.com
       messageTemplate: |
         An automated update from FluxBot       
     push:
