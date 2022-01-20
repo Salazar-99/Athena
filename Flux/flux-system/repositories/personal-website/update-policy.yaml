@@ -20,7 +20,6 @@ spec:
         name: fluxbot
         email: fluxbot@example.com 
       messageTemplate: |
-        An automated update from FluxBot
-        [ci skip]        
+        An automated update from FluxBot       
     push:
       branch: main
