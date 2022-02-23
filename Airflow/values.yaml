@@ -220,7 +220,7 @@ rbac:
 
 # Airflow executor
 # Options: LocalExecutor, CeleryExecutor, KubernetesExecutor, CeleryKubernetesExecutor
-executor: "CeleryExecutor"
+executor: "KubernetesExecutor"
 
 # If this is true and using LocalExecutor/KubernetesExecutor/CeleryKubernetesExecutor, the scheduler's
 # service account will have access to communicate with the api-server and launch pods.
@@ -1460,13 +1460,13 @@ dags:
     ## the name of an existing PVC to use
     existingClaim:
   gitSync:
-    enabled: false
+    enabled: true
 
     # git repo clone url
     # ssh examples ssh://git@github.com/apache/airflow.git
     # git@github.com:apache/airflow.git
     # https example: https://github.com/apache/airflow.git
-    repo: https://github.com/apache/airflow.git
+    repo: https://github.com/Salazar-99/Athena
     branch: v2-2-stable
     rev: HEAD
     depth: 1
@@ -1474,7 +1474,7 @@ dags:
     maxFailures: 0
     # subpath within the repo where dags are located
     # should be "" if dags are at repo root
-    subPath: "tests/dags"
+    subPath: "Airflow/dags/"
     # if your repo needs a user name password
     # you can load them to a k8s secret like the one below
     #   ---
