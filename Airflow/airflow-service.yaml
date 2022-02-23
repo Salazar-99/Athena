@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    meta.helm.sh/release-name: airflow
+    meta.helm.sh/release-namespace: airflow
+  creationTimestamp: "2022-02-13T17:42:58Z"
+  labels:
+    app.kubernetes.io/managed-by: Helm
+    chart: airflow-1.4.0
+    component: webserver
+    heritage: Helm
+    release: airflow
+    tier: airflow
+  name: airflow-webserver
+  namespace: airflow
+  resourceVersion: "27914839"
+  uid: cb9fb6d4-2bd3-4e6d-b6f1-85bdb860ad88
+spec:
+  clusterIP: 10.101.66.181
+  clusterIPs:
+  - 10.101.66.181
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: airflow-ui
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+    nodePort: 30880
+  selector:
+    component: webserver
+    release: airflow
+    tier: airflow
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
