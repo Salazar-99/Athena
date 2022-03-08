@@ -15,8 +15,8 @@ spec:
     spec: 
       containers:
       - name: personal-website
-        image: 573500965530.dkr.ecr.us-east-2.amazonaws.com/personalwebsite:1642655365 # {"$imagepolicy": "flux-system:personal-website"}
-        imagePullPolicy: Always
+        image: 573500965530.dkr.ecr.us-east-2.amazonaws.com/personalwebsite:1646537179 # {"$imagepolicy": "flux-system:personal-website"}
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
         env:
